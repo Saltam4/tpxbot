@@ -74,11 +74,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [Tpx Assistant](https://telegra.ph/file/a67b3bd64437cf3a9c573.png) 」────
+────「 [Tpx Assistant](https://telegra.ph/file/5d33b95529061c84d08b3.png) 」────
 *Hey there!*
-*I am group managnment bot of @TeamProjectX_Official. Feel free to add me to your group!*
+*I am an anime themed based bot, specially made for TPX. Feel free to add me to your group!*
 
-➥ Try The Command Buttons Below To Know My Features
+➥ Try The Help Buttons Below To Know My Abilities
 """
 
 buttons = [
@@ -88,26 +88,26 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="🔅 Group", url="https://t.me/TeamProjectX_Official"),
-        InlineKeyboardButton(text="🔔 Channel", url="https://t.me/TeamProjectX_News"),
+        InlineKeyboardButton(text="🔔 Updates", url="https://telegram.dog/TeamProjectX_News"),
+        InlineKeyboardButton(text="💫 Group", url="https://telegram.dog/TeamProjectX_Official"),
     ],
     [
         InlineKeyboardButton(text="🌐 Website", url="https://hindisub.com"),
         InlineKeyboardButton(text="⚙️ Commands", callback_data="help_back"),
-        InlineKeyboardButton(text="👑 Owner", url="https://t.me/TpxMadara"
+        InlineKeyboardButton(text="👑 Owner", url="https://t.me/Saltam4"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-Hey there, I'm [TpxAssistant]("https://telegra.ph/file/5d33b95529061c84d08b3.png") .
+Hey boss, I'm [TpxAssistant]("https://telegra.ph/file/9eb2571bd6f5838ad41aa.png") .
 ⚙️ All commands can either be used with `/` or `!`.
-⚙️ Join my Update Channel: @TeamProjectX_Official
+⚙️ Join my Update Channel: @TeamProjectX_News
 """
 
 
-ASUNA_IMG = "https://telegra.ph/file/5d33b95529061c84d08b3.png"
+ASUNA_IMG = "https://telegra.ph/file/7e61fe06a9c02747249b4.png"
 
 DONATE_STRING = """No need, we are happy with your love and support ^_^"""
 
@@ -354,15 +354,15 @@ def asuna_about_callback(update, context):
     query = update.callback_query
     if query.data == "asuna_":
         query.message.edit_text(
-            text=""" ❗ I'm *TpxAssistant*, a powerful group management bot built to help you manage your group easily.
+            text=""" ❗ I'm *Asuna*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_TpxAssistant's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/SAlTAM4/TpxAssistantRobot).
+                 \n\n_shasa's licensed under the GNU General Public License v3.0_
+                 \nHere is the [💾Repository](https://github.com/HuntingBots/AsunaRobot).
                  \n\nIf you have any question about *Asuna*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -385,7 +385,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi, I'm *Oppaii*
-                 \nHere is the [Source Code](https://github.com/Saltam4/TpxAssistantRobot) .""",
+                 \nHere is the [Source Code](https://github.com/Saltam4/OppaiiRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
