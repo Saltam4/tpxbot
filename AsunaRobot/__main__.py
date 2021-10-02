@@ -76,34 +76,35 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 ────「 [Tpx Assistant](https://telegra.ph/file/5d33b95529061c84d08b3.png) 」────
 *Hey there!*
-*I am an anime themed based bot, specially made for TPX. Feel free to add me to your group!*
+*I am an anime themed based powerful bot with a lot of Sexy Features. Feel free to add me to your group!*
 
-➥ Try The Help Buttons Below To Know My Abilities
+
+➥ Try The Help Buttons Below To Know My Abilities U>ᴥ<U
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add Me To Your Group ➕️", url="t.me/TeamProjectX_Robot?startgroup=true"
+            text="➕️ Add Me To Your Group ➕️", url="t.me/OppaiiRobot?startgroup=true"
         ),
     ],
     [
-        InlineKeyboardButton(text="🔔 Updates", url="https://telegram.dog/TeamProjectX_News"),
-        InlineKeyboardButton(text="💫 Group", url="https://telegram.dog/TeamProjectX_Official"),
+        InlineKeyboardButton(text="About", callback_data="asuna_"),
+        InlineKeyboardButton(text="Commands", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🌐 Website", url="https://hindisub.com"),
-        InlineKeyboardButton(text="⚙️ Commands", callback_data="help_back"),
-        InlineKeyboardButton(text="👑 Owner", url="https://t.me/Saltam4"
+        InlineKeyboardButton(text="📘 Logs", url="https://t.me/MakimaLog"),
+        InlineKeyboardButton(text="🔔 Updates", url="https://telegram.dog/MakimaUpdate"),
+        InlineKeyboardButton(text="💾 Source Code", url="https://t.me/Saltam4"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-Hey boss, I'm [TpxAssistant]("https://telegra.ph/file/9eb2571bd6f5838ad41aa.png") .
+Hey boss, I'm [OppaiiRobot]("https://telegra.ph/file/9eb2571bd6f5838ad41aa.png") .
 ⚙️ All commands can either be used with `/` or `!`.
-⚙️ Join my Update Channel: @TeamProjectX_News
+⚙️ Join my Update Channel: @MakimaUpdate
 """
 
 
