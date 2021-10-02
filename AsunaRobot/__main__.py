@@ -74,11 +74,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [Tpx Assistant](https://telegra.ph/file/5d33b95529061c84d08b3.png) 」────
+────「 [Tpx Assistant](https://telegra.ph/file/a67b3bd64437cf3a9c573.png) 」────
 *Hey there!*
-*I am group management bot of @TeamProjectX_Official. Feel free to add me to your group!*
+*I am group managnment bot of @TeamProjectX_Official. Feel free to add me to your group!*
 
-➥ Try The Help Buttons Below To Know My Features!
+➥ Try The Command Buttons Below To Know My Features
 """
 
 buttons = [
@@ -88,8 +88,8 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="🔆 Group", url="https://t.me/teamprojectx_official"),
-        InlineKeyboardButton(text="🔔 Channel", url="https://t.me/teamprojectx_news"),
+        InlineKeyboardButton(text="🔅 Group", url="https://t.me/TeamProjectX_Official"),
+        InlineKeyboardButton(text="🔔 Channel", url="https://t.me/TeamProjectX_News"),
     ],
     [
         InlineKeyboardButton(text="🌐 Website", url="https://hindisub.com"),
@@ -101,7 +101,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey boss, I'm [Tpx Assistant]("https://telegra.ph/file/5d33b95529061c84d08b3.png") .
+Hey there, I'm [TpxAssistant]("https://telegra.ph/file/5d33b95529061c84d08b3.png") .
 ⚙️ All commands can either be used with `/` or `!`.
 ⚙️ Join my Update Channel: @TeamProjectX_Official
 """
@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "Jimda hu vrom! 🥱\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -362,7 +362,8 @@ def asuna_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_TpxAssistant's licensed under the GNU General Public License v3.0_
-                 \n\nIf you have any question about *TpxAssistant*, let us know at @TeamProjectX_Official.""",
+                 \nHere is the [💾Repository](https://github.com/SAlTAM4/TpxAssistantRobot).
+                 \n\nIf you have any question about *Asuna*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -383,7 +384,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi, I'm *TpxAssistant*
+            text=""" Hi, I'm *Oppaii*
                  \nHere is the [Source Code](https://github.com/Saltam4/TpxAssistantRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -452,7 +453,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
             ),
         )
 
@@ -524,7 +525,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="[► Back ◄]",
+                                text="Back",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -674,7 +675,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                "[Hey there, I'm alive now](https://telegra.ph/file/f37655e0f9db876a24113.gif)",
+                "[Hey there, I'm alive now U>ᴥ<U](https://telegra.ph/file/f37655e0f9db876a24113.gif)",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
