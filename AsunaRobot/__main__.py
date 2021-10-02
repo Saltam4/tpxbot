@@ -101,7 +101,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey boss, I'm Tpx Assistant.
+Hey boss, I'm [Tpx Assistant]("https://telegra.ph/file/5d33b95529061c84d08b3.png") .
 ⚙️ All commands can either be used with `/` or `!`.
 ⚙️ Join my Update Channel: @TeamProjectX_Official
 """
@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "Jimda hu vrom! 🥱\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -354,7 +354,7 @@ def asuna_about_callback(update, context):
     query = update.callback_query
     if query.data == "asuna_":
         query.message.edit_text(
-            text=""" ❗ I'm *Tpx Assistant*, a powerful group management bot built to help you manage your group easily.
+            text=""" ❗ I'm *TpxAssistant*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -383,8 +383,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi, I'm *Oppaii*
-                 \nHere is the [Source Code](https://github.com/Saltam4/OppaiiRobot) .""",
+            text=""" Hi, I'm *TpxAssistant*
+                 \nHere is the [Source Code](https://github.com/Saltam4/TpxAssistantRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -452,7 +452,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
             ),
         )
 
@@ -524,7 +524,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back",
+                                text="[► Back ◄]",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -674,7 +674,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                "[Hey there, I'm alive now U>ᴥ<U](https://telegra.ph/file/f37655e0f9db876a24113.gif)",
+                "[Hey there, I'm alive now](https://telegra.ph/file/f37655e0f9db876a24113.gif)",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
