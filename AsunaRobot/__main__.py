@@ -74,41 +74,40 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [Oppaii Robot](https://telegra.ph/file/a67b3bd64437cf3a9c573.png) 」────
+────「 [Tpx Assistant](https://telegra.ph/file/5d33b95529061c84d08b3.png) 」────
 *Hey there!*
-*I am an anime themed based powerful bot with a lot of Sexy Features. Feel free to add me to your group!*
+*I am group management bot of @TeamProjectX_Official. Feel free to add me to your group!*
 
-
-➥ Try The Help Buttons Below To Know My Abilities U>ᴥ<U
+➥ Try The Help Buttons Below To Know My Features!
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add Me To Your Group ➕️", url="t.me/OppaiiRobot?startgroup=true"
+            text="➕️ Add Me To Your Group ➕️", url="t.me/TeamProjectX_Robot?startgroup=true"
         ),
     ],
     [
-        InlineKeyboardButton(text="About", callback_data="asuna_"),
-        InlineKeyboardButton(text="Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="🔆 Group", url="https://t.me/teamprojectx_official"),
+        InlineKeyboardButton(text="🔔 Channel", url="https://t.me/teamprojectx_news"),
     ],
     [
-        InlineKeyboardButton(text="📘 Logs", url="https://t.me/MakimaLog"),
-        InlineKeyboardButton(text="🔔 Updates", url="https://telegram.dog/MakimaUpdate"),
-        InlineKeyboardButton(text="💾 Source Code", url="https://t.me/Saltam4"
+        InlineKeyboardButton(text="🌐 Website", url="https://hindisub.com"),
+        InlineKeyboardButton(text="⚙️ Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="👑 Owner", url="https://t.me/TpxMadara"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-Hey boss, I'm [OppaiiRobot]("https://telegra.ph/file/9eb2571bd6f5838ad41aa.png") .
+Hey boss, I'm Tpx Assistant.
 ⚙️ All commands can either be used with `/` or `!`.
-⚙️ Join my Update Channel: @MakimaUpdate
+⚙️ Join my Update Channel: @TeamProjectX_Official
 """
 
 
-ASUNA_IMG = "https://telegra.ph/file/7e61fe06a9c02747249b4.png"
+ASUNA_IMG = "https://telegra.ph/file/5d33b95529061c84d08b3.png"
 
 DONATE_STRING = """No need, we are happy with your love and support ^_^"""
 
