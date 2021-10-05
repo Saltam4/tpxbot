@@ -89,8 +89,8 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="About", callback_data="asuna_"),
-        InlineKeyboardButton(text="Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="❕ About", callback_data="asuna_"),
+        InlineKeyboardButton(text="⚙️ Commands", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(text="📘 Logs", url="https://t.me/MakimaLog"),
@@ -102,9 +102,9 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey boss, I'm [OppaiiRobot]("https://telegra.ph/file/9eb2571bd6f5838ad41aa.png") .
+Hey boss, I'm [TpxAssistant]("https://telegra.ph/file/9eb2571bd6f5838ad41aa.png") .
 ⚙️ All commands can either be used with `/` or `!`.
-⚙️ Join my Update Channel: @MakimaUpdate
+⚙️ Join my Update Channel: @TeamProjectX_News
 """
 
 
