@@ -102,7 +102,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey boss, I'm OppaiiRobot.
+Hey boss, I'm [OppaiiRobot]("https://telegra.ph/file/9eb2571bd6f5838ad41aa.png") .
 ⚙️ All commands can either be used with `/` or `!`.
 ⚙️ Join my Update Channel: @TeamProjectX_News
 """
@@ -194,7 +194,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="[► Back ◄]", callback_data="help_back"
+                                    text="Back", callback_data="help_back"
                                 )
                             ]
                         ]
@@ -355,7 +355,7 @@ def asuna_about_callback(update, context):
     query = update.callback_query
     if query.data == "asuna_":
         query.message.edit_text(
-            text=""" ❗ I'm *OppaiiRobot*, a powerful group management bot built to help you manage your group easily.
+            text=""" ❗ I'm *TpxAssistant*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -363,12 +363,11 @@ def asuna_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_shasa's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/Saltam4/tpxRobot).
-                 \n\nIf you have any question about *OppaiiRobot*, let me know @SAlTAM4 .""",
+                 \n\nIf you have any question about *Asuna*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="asuna_back")]]
+                [[InlineKeyboardButton(text="Back", callback_data="asuna_back")]]
             ),
         )
     elif query.data == "asuna_back":
@@ -386,11 +385,11 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi, I'm *Oppaii*
-                 \nHere is the [Source Code](https://github.com/Saltam4/OppaiiRobot) .""",
+                 \nHere is [My Group](https://t.me/TeamProjectX_Official) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="source_back")]]
+                [[InlineKeyboardButton(text="Back", callback_data="source_back")]]
             ),
         )
     elif query.data == "source_back":
@@ -454,7 +453,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
             ),
         )
 
