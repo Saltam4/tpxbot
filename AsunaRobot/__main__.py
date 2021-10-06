@@ -102,7 +102,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey boss, I'm [Tpx Assistant]("https://telegra.ph/file/9eb2571bd6f5838ad41aa.png") .
+Hey boss, I'm OppaiiRobot.
 ⚙️ All commands can either be used with `/` or `!`.
 ⚙️ Join my Update Channel: @TeamProjectX_News
 """
